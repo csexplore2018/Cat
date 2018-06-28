@@ -1,21 +1,45 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package catt;
 
-/**
- *
- * @author gc_science8
- */
-public class Catt {
 
-    /**
-     * @param args the command line arguments
-     */
+public class Catt {
+    
+    public String name = "Ket";
+    public String food = "fish";
+    
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Animal a = new Animal();
+        System.out.println(a.name);
+        a.talk();
+        
+        Animal b = new Animal();
+        System.out.println(b.name);
+        b.talk();
     }
     
+}
+
+class Animal {
+    
+    public String name = "Ket";
+    public String food = "fish";
+    
+    public void talk() {
+        System.out.println("Nyaa~");
+    }
+}
+
+class Queen extends Animal{
+    
+    @Override
+    public void talk() {
+        System.out.println("Ooh Nyaa Nyaa~");
+    }
+    
+}
+
+class Tomcat extends Queen {
+    
+    public String name = "Leo";
 }
