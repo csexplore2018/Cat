@@ -55,3 +55,14 @@ class Tomcat extends Queen {
         System.out.println("Nyaaaa");
     }
 }
+
+class Persian extends Animal{
+    
+    public String name = "Catto";
+    public String food = "fish";
+    
+    public void talk() {
+        System.out.println("kkkkkkkkk");
+    }
+    
+}
