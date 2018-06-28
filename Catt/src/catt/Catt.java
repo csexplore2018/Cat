@@ -3,7 +3,7 @@ package catt;
 
 public class Catt {
     
-    public String name = "Ket";
+    public String name = "Catto";
     public String food = "fish";
     
     
@@ -13,9 +13,13 @@ public class Catt {
         System.out.println(a.name);
         a.talk();
         
-        Animal b = new Animal();
+        Queen b = new Queen();
         System.out.println(b.name);
         b.talk();
+        
+        Tomcat c = new Tomcat();
+        System.out.println(c.name);
+        c.talk();
     }
     
 }
@@ -32,7 +36,10 @@ class Animal {
 
 class Queen extends Animal{
     
-    @Override
+    public String name = "Catto";
+    public String food = "fish";
+    
+    
     public void talk() {
         System.out.println("Ooh Nyaa Nyaa~");
     }
@@ -42,4 +49,9 @@ class Queen extends Animal{
 class Tomcat extends Queen {
     
     public String name = "Leo";
+    public String food = "fish";
+            
+    public void talk() {
+        System.out.println("Nyaaaa");
+    }
 }
